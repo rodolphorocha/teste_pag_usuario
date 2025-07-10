@@ -1,55 +1,63 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <main>
- <div class="fundo">
+    <div class="fundo">
+      <img src="/img/Ellipse 2.png" alt="">
 
-    <!-- <img src="/img/Ellipse 2.png" alt=""> -->
+      <div class="card">
+        <div class="conteudo">
+        <h2>GustavoLopes</h2>
+        <p class="username">@surikkto</p>
 
-  <div class="card">
+        <ul>
+          <li>
+            <span> 24 </span><br />
+            seguidores
+          </li>
+          <li>
+            <span> 69 </span><br />
+            seguindo
+          </li>
+        </ul>
 
-    <h2>GustavoLopes</h2>
-    <p>@surikkto</p>
+        <p><button class="editar">Editar perfil</button></p>
 
-    <ul>
-      <li>
-       <span> 24 </span><br> seguidores
-      </li>
-      <li>
-      <span>  69 </span><br> seguindo
-      </li>
-    </ul>
-    <div class="editar">
-      <p> Editar perfil</p>
+        <div class="biografia">
+          <p>
+          -Suricato <br>
+          -Amigo do Maia  <br>
+          -Flamengo no coração❤❤ <br>
+          -Joinville - 17y️
+          </p>
+        </div>
+      </div>
+      </div>
     </div>
 
-    <div class="biografia">
-      <p>
-        -Suricato
-        -Amigo do Maia
-        -Flamengo no coração❤❤
-        -Joinville - 17y️
-      </p>
-    </div>
-
-  </div>
-</div>
-</main>
+  </main>
 </template>
 
 <style scoped>
-
-
 .fundo {
-  background-color: #2F9E41;
+
+    background: linear-gradient(to bottom, #2F9E41 50%, #E1E1E1 50%);
   position: relative;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 10%;
+
 
 }
 
 img {
   position: absolute;
-  top: 10%;
+  width: 25%;
+  max-width: 25vw;
+  height: auto;
+  top: 4%;
   left: 50%;
   z-index: 2;
   text-align: center;
@@ -58,14 +66,24 @@ img {
 }
 
 .card {
+
+
   margin: auto;
   background-color: white;
   text-align: center;
-  width: 50%;
+  width: 90%;
+  max-width: 600px;
+
+
   overflow: hidden;
   border-radius: 12px;
   position: relative;
   z-index: 1;
+
+}
+
+.conteudo {
+  padding: 8vh 5vw;
 }
 
 .card h2 {
@@ -74,18 +92,18 @@ img {
   font-size: 1.8rem;
 }
 
-.card p {
-
+.card p.username {
+  color: gray;
 }
 
 .card ul {
   display: flex;
   justify-content: center;
   margin: 1vw 2vw 1vw 2vw;
-
 }
 
-.card ul li  {
+.card ul li {
+  color: gray;
   margin: auto;
   font-size: 1.3rem;
 }
@@ -93,5 +111,55 @@ img {
 .card ul li span {
   color: black;
   font-weight: bold;
+}
+
+.editar {
+  background-color: white;
+  border: solid 2px #075200;
+  border-radius: 12px;
+  font-size: 1rem;
+  width: 60%;
+  max-width: 200px;
+  min-width: 120px;
+  color: #075200;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.biografia {
+
+background-color: rgba(211, 211, 211, 0.2);
+  border-radius: 12px;
+  padding: 20px 5px 20px 5px;
+  text-align: center;
+}
+
+.biografia p {
+ color: black;
+ text-align: left;
+}
+
+@media (max-width: 600px) {
+  .card ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.4rem;
+  }
+
+  .biografia p {
+    font-size: 0.9rem;
+  }
+
+  .img {
+    top: 2%;
+    width: 80px;
+  }
+
+  .editar {
+    font-size: 0.95rem;
+  }
 }
 </style>
