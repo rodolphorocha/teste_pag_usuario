@@ -54,7 +54,7 @@
 
 img {
   position: absolute;
-  width: 25%;
+  width: 17%;
   max-width: 25vw;
   height: auto;
   top: 4%;
@@ -119,7 +119,7 @@ img {
   border-radius: 12px;
   font-size: 1rem;
   width: 60%;
-  max-width: 200px;
+  max-width: 100px;
   min-width: 120px;
   color: #075200;
   margin-top: 5%;
@@ -139,27 +139,5 @@ background-color: rgba(211, 211, 211, 0.2);
  text-align: left;
 }
 
-@media (max-width: 600px) {
-  .card ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
 
-  .card h2 {
-    font-size: 1.4rem;
-  }
-
-  .biografia p {
-    font-size: 0.9rem;
-  }
-
-  .img {
-    top: 2%;
-    width: 80px;
-  }
-
-  .editar {
-    font-size: 0.95rem;
-  }
-}
 </style>
